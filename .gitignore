@@ -1,0 +1,38 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Editors
+.vscode/
+.idea/
+
+# Build/Cache (future tooling)
+dist/
+build/
+.cache/
+.parcel-cache/
+.tmp/
+coverage/
+
+# Node (if added later)
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+
+# Images/exports (optional)
+*.psd
+*.ai
+*.sketch

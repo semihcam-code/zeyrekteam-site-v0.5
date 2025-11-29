@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ZeyrekTeam CS2 Sunucu</title>
+  <meta name="description" content="ZeyrekTeam Counter‑Strike 2 sunucusu: yüksek performans, topluluk ve rekabet.">
+  <meta name="keywords" content="CS2, Counter-Strike 2, ZeyrekTeam, sunucu, competitive, scrim, turnuva">
+  <meta property="og:title" content="ZeyrekTeam CS2 Sunucu">
+  <meta property="og:description" content="Yüksek performanslı CS2 sunucusu, oyuncuları cezbeden deneyim.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="dark">
+  <div class="bg"><div class="grain"></div><div class="glow"></div></div>
+  <header class="site-header" aria-label="ZeyrekTeam">
+    <a class="brand" href="#hero" aria-label="ZeyrekTeam">Zeyrek<span>Team</span></a>
+    <nav class="nav" aria-label="Ana Menü"></nav>
+  </header>
+  <main>
+    <section id="hero" class="hero" aria-label="Karşılama">
+      <div class="hero-content">
+        <h1>Counter‑Strike 2 <span>Sunucusu</span></h1>
+        <p>Yüksek tick, düşük gecikme ve topluluğu bir araya getiren rekabet.</p>
+        <div class="cta">
+          <a class="btn primary" href="#server">Sunucuya Bağlan</a>
+          <a class="btn ghost" href="#stats">Canlı İstatistikler</a>
+        </div>
+      </div>
+    </section>
+    <section id="server" class="section">
+      <div class="container">
+        <h2>Sunucu</h2>
+        <div class="server-card">
+          <div class="server-main">
+            <div class="server-title">ZeyrekTeam CS2</div>
+            <div class="server-status"><span class="dot"></span><span class="label">Durum</span><span class="value" id="status-value">Offline</span></div>
+            <div class="server-meta"><span class="pill">Tick <span id="tick">128</span></span><span class="pill">Slot <span id="slots">20</span></span><span class="pill">Bölge <span id="region">EU‑TR</span></span></div>
+            <div class="server-ip" id="server-ip" data-ip="YOUR_SERVER_IP:27015">IP: YOUR_SERVER_IP:27015</div>
+            <div class="server-actions"><a id="connect-server" class="btn primary" href="#">Bağlan</a><button id="copy-ip" class="btn ghost">IP Kopyala</button><a class="btn ghost" href="#" id="discord-link">Discord</a><a class="btn ghost" href="#" id="steam-link">Steam</a></div>
+          </div>
+          <div class="server-aside">
+            <ul class="server-list">
+              <li>Mod: Competitive • PUG • Scrim</li>
+              <li>Kurallar: Saygı • Hile yok • AFK yok</li>
+              <li>Anti‑Cheat: Sunucu denetimleri</li>
+              <li>Destek: Discord üzerinden anlık iletişim</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="features" class="section">
+      <div class="container">
+        <h2>Özellikler ve Kurallar</h2>
+        <div class="grid trio">
+          <div class="card"><h3>Performans</h3><p>Düşük gecikme, optimize edilmiş yapı ve stabil tick.</p></div>
+          <div class="card"><h3>Topluluk</h3><p>Adil oyun, saygı ve sürdürülebilir rekabet ortamı.</p></div>
+          <div class="card"><h3>Denetim</h3><p>Hile önleme ve hızlı moderasyon yanıtları.</p></div>
+        </div>
+        <ul class="rules"><li>Saygı ve sporcu ahlakı şarttır.</li><li>Hile, exploit ve taciz yasaktır.</li><li>AFK ve troll davranışlara izin verilmez.</li><li>Discord üzerinden hızlı destek ve raporlama.</li></ul>
+      </div>
+    </section>
+    <section id="stats" class="section">
+      <div class="container">
+        <h2>Canlı İstatistikler</h2>
+        <div class="stats-bar"><div><span>Online</span><strong id="players-online">0</strong>/<span id="players-max">0</span></div><div><span>Ping</span><strong id="ping">0</strong> ms</div><div><span>Harita</span><strong id="current-map">—</strong></div></div>
+        <div class="grid roster" id="players"></div>
+      </div>
+    </section>
+    <section id="gallery" class="section">
+      <div class="container"><h2>Galeri</h2><div class="gallery-grid" id="gallery-grid"></div></div>
+    </section>
+    
+    
+    <section id="contact" class="section join">
+      <div class="container">
+        <h2>İletişim</h2>
+        <form class="contact" id="contact-form" aria-label="İletişim Formu">
+          <div class="form-row">
+            <label class="field"><span>Ad Soyad</span><input type="text" id="name" placeholder="Ad Soyad" required></label>
+            <label class="field"><span>E‑posta</span><input type="email" id="email" placeholder="ornek@mail.com" required></label>
+          </div>
+          <div class="form-row">
+            <label class="field full"><span>Discord</span><input type="text" id="discord" placeholder="kullanici#0000" required></label>
+          </div>
+          <label class="field full"><span>Mesaj</span><textarea id="message" placeholder="Mesajınız" rows="4" required></textarea></label>
+          <div class="cta"><button class="btn primary" type="submit">Gönder</button></div>
+          <div class="form-note" id="form-note" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><p>© ZeyrekTeam • CS2</p></footer>
+  <script src="app.js"></script>
+</body>
+</html>
